@@ -1,19 +1,14 @@
 package application;
 
-import db.DB;
-
-import java.sql.Connection;
-import java.sql.SQLException;
+import models.entities.Departament;
 
 public class Program {
 
     public static void main(String[] args) {
-        Connection conn = null;
 
+        Departament obj = new Departament(1, "Books");
 
-            conn = DB.getConnection();
-
-            DB.closeConnection();
+        System.out.println(obj);
 
 
     }
